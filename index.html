@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GST calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="disp_screen">
+        <div id="gst_box">
+          <div class="value_heading">
+            <span class="heading_name">Actual Price:</span>
+            <span class="heading_value" id="actual_price">0</span>
+          </div>
+          <div class="value_heading">
+            <span class="heading_name">GST Price:</span>
+            <span class="heading_value" id="gst_value">0</span>
+          </div>
+          <div class="value_heading">
+            <span class="heading_name">CGST Price:</span>
+            <span class="heading_value" id="cgst_value">0</span>
+          </div>
+          <div class="value_heading">
+            <span class="heading_name">SGST Price:</span>
+            <span class="heading_value" id="sgst_value">0</span>
+          </div>
+        </div>
+        <div class="finalvalue" id="answer">0</div>
+      </div>
+      <div class="calbody">
+        <h2>ADD GST</h2>
+        <div class="gst_buttonset1">
+          <button type="submit" value="3">3%</button>
+          <button type="submit" value="5">5%</button>
+          <button type="submit" value="12">12%</button>
+          <button type="submit" value="28">28%</button>
+        </div>
+        <div class="gst_buttonset2">
+          <button type="submit" value="3">-3%</button>
+          <button type="submit" value="5">-5%</button>
+          <button type="submit" value="12">-12%</button>
+          <button type="submit" value="28">-28%</button>
+        </div>
+        <br />
+        <div class="cal_buttons">
+          <button value="AC">AC</button>
+          <button value="DEL">DEL</button>
+          <button value="%">%</button>
+          <button value="/">÷</button>
+          <button value="7">7</button>
+          <button value="8">8</button>
+          <button value="9">9</button>
+          <button value="*">x</button>
+          <button value="4">4</button>
+          <button value="5">5</button>
+          <button value="6">6</button>
+          <button value="-">-</button>
+          <button value="1">1</button>
+          <button value="2">2</button>
+          <button value="3">3</button>
+          <button value="+">+</button>
+          <button value="0">0</button>
+          <button value=".">.</button>
+          <button class="col2" value="=">=</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="custom.js"></script>
+  </body>
+</html>

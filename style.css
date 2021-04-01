@@ -1,0 +1,123 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  width: 100%;
+  font-size: 100%;
+}
+
+.container {
+  margin: 2em auto;
+  max-width: 426px;
+  width: 100%;
+  height: auto;
+  background-color: #ce2d4f;
+  border-radius: 1em;
+  box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.5);
+}
+
+.disp_screen {
+  background-color: #f8f4f9;
+  border-radius: inherit;
+  text-align: right;
+  padding: 1em 1em;
+  overflow: hidden;
+  box-shadow: inherit;
+  position: relative;
+}
+#gst_box {
+  width: 100%;
+  position: absolute;
+  top: -200%;
+}
+.active {
+  position: relative !important;
+}
+.value_heading {
+  width: 100%;
+  margin-top: 0.5em;
+}
+.heading_name {
+  display: inline-block;
+  width: 50%;
+  text-align: right;
+  margin-right: 0.5em;
+  font-size: 1em;
+  color: #ce2d4f;
+  font-weight: 600;
+}
+.heading_value {
+  display: inline-block;
+  width: 40%;
+  text-align: left;
+  font-size: 1em;
+  color: #ce2d4f;
+  font-weight: bold;
+}
+
+.finalvalue {
+  font-size: 2rem;
+  text-align: right;
+  font-weight: bold;
+  color: #f8f4f9;
+  background-color: #ce2d4f;
+  border-radius: 0.2rem;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  overflow-x: scroll;
+}
+
+/* calulator body style */
+.calbody {
+  width: 100%;
+  padding: 0.5rem;
+}
+.calbody h2 {
+  text-align: center;
+  color: #f8f4f9;
+}
+.gst_buttonset1,
+.gst_buttonset2 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* button style */
+button {
+  padding: 0.7rem 0rem;
+  margin: 0.5rem 0.25rem;
+  background-color: #f8f4f9;
+  color: #ce2d4f;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0em 0.3em 0.1em rgba(0, 0, 0, 0.5);
+  outline: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+button:active {
+  box-shadow: inset 0em 0.2em 0.2em rgba(0, 0, 0, 0.5);
+}
+
+.cal_buttons {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.col2 {
+  grid-column: span 2;
+}
+
+@media screen and (max-width: 426px) {
+  .container {
+    margin: 0 auto;
+    border-radius: 0;
+  }
+}
